@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quran_stats_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:stretchColumns="1" >
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tv_selected_days"
+                    style="@style/mytextview"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="0" />
+
+                <TextView
+                    layout_column="1"
+                    android:gravity="right"
+                    android:text="" />
+
+                <TextView
+                    style="@style/mytextview"
+                    android:gravity="right"
+                    android:text="مدة الختمة:" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tv_start_date"
+                    style="@style/mytextview"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="التاريخ" />
+
+                <TextView
+                    layout_column="1"
+                    android:gravity="right"
+                    android:text="" />
+
+                <TextView
+                    style="@style/mytextview"
+                    android:gravity="right"
+                    android:text="يداية الختمة:" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tv_end_date"
+                    style="@style/mytextview"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="التاريخ" />
+
+                <TextView
+                    layout_column="1"
+                    android:gravity="right"
+                    android:text="" />
+
+                <TextView
+                    style="@style/mytextview"
+                    android:gravity="right"
+                    android:text="نهاية الختمة:" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tv_today_date"
+                    style="@style/mytextview"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="التاريخ" />
+
+                <TextView
+                    layout_column="1"
+                    android:gravity="right"
+                    android:text="" />
+
+                <TextView
+                    style="@style/mytextview"
+                    android:gravity="right"
+                    android:text="التاريخ اليوم:" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tv_remaining_pages"
+                    style="@style/mytextview"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="20 يوم" />
+
+                <TextView
+                    style="@style/mytextview"
+                    android:gravity="left"
+                    android:text="" />
+
+                <TextView
+                    style="@style/mytextview"
+                    android:gravity="right"
+                    android:text="الأيام المتبقية لإنهاء الختمة:" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tv_page_per_day"
+                    style="@style/mytextview"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text=""
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/mytextview"
+                    android:gravity="left"
+                    android:text="" />
+
+                <TextView
+                    style="@style/mytextview"
+                    android:gravity="right"
+                    android:text="معدل القراءة لإنهاء الختمة:" />
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tv_last_page"
+                    style="@style/mytextview"
+                    android:gravity="left"
+                    android:padding="3dip"
+                    android:text="66" />
+
+                <TextView
+                    layout_column="1"
+                    android:gravity="right"
+                    android:text="" />
+
+                <TextView
+                    style="@style/mytextview"
+                    android:gravity="right"
+                    android:text="آخر صفحة تم الوصول إليها: " />
+            </TableRow>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="2" >
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/btn_update_page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تحديث"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/et_current_page"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:gravity="left"
+                        android:hint="آخر صفحة"
+                        android:inputType="number"
+                        android:lines="1" />
+
+                    <TextView
+                        style="@style/mytextview"
+                        layout_column="2"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/mytextview"
+                        android:layout_width="fill_parent"
+                        android:gravity="right"
+                        android:text="الصفحة الحالية:" />
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090" />
+        </TableLayout>
+
+
+
+            <TextView
+                android:id="@+id/tv_RandomHadith"
+                style="@style/mytextview"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="حديت" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
